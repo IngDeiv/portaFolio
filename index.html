@@ -15,9 +15,237 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- TypedJS library -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <style>
+        /* @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+            html {
+            font-family: 'Montserrat', Arial, sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            }
+
+            body {
+            background: #F2F3EB;
+            }
+
+            button {
+            overflow: visible;
+            }
+
+            button, select {
+            text-transform: none;
+            }
+
+            button, input, select, textarea {
+            color: #5A5A5A;
+            font: inherit;
+            margin: 0;
+            }
+
+            input {
+            line-height: normal;
+            }
+
+            textarea {
+            overflow: auto;
+            }
+
+            #container {
+            border: solid 3px #474544;
+            max-width: 768px;
+            margin: 60px auto;
+            position: relative;
+            }
+
+            form {
+            padding: 37.5px;
+            margin: 50px 0;
+            }
+
+            h1 {
+            color: #474544;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 7px;
+            text-align: center;
+            text-transform: uppercase;
+            }
+
+            .underline {
+            border-bottom: solid 2px #474544;
+            margin: -0.512em auto;
+            width: 80px;
+            }
+
+            .icon_wrapper {
+            margin: 50px auto 0;
+            width: 100%;
+            }
+
+            .icon {
+            display: block;
+            fill: #474544;
+            height: 50px;
+            margin: 0 auto;
+            width: 50px;
+            }
+
+            .email {
+                float: right;
+                width: 45%;
+            }
+
+            input[type='text'], [type='email'], select, textarea {
+                background: none;
+            border: none;
+                border-bottom: solid 2px #474544;
+                color: #474544;
+                font-size: 1.000em;
+            font-weight: 400;
+            letter-spacing: 1px;
+                margin: 0em 0 1.875em 0;
+                padding: 0 0 0.875em 0;
+            text-transform: uppercase;
+                width: 100%;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -o-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                -ms-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+
+            input[type='text']:focus, [type='email']:focus, textarea:focus {
+                outline: none;
+                padding: 0 0 0.875em 0;
+            }
+
+            .message {
+                float: none;
+            }
+
+            .name {
+                float: left;
+                width: 45%;
+            }
+
+            select {
+            background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+            outline: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            }
+
+            select::-ms-expand {
+            display: none;
+            }
+
+            .subject {
+            width: 100%;
+            }
+
+            .telephone {
+            width: 100%;
+            }
+
+            textarea {
+                line-height: 150%;
+                height: 150px;
+                resize: none;
+            width: 100%;
+            }
+
+            ::-webkit-input-placeholder {
+                color: #474544;
+            }
+
+            :-moz-placeholder { 
+                color: #474544;
+                opacity: 1;
+            }
+
+            ::-moz-placeholder {
+                color: #474544;
+                opacity: 1;
+            }
+
+            :-ms-input-placeholder {
+                color: #474544;
+            }
+
+            #form_button {
+            background: none;
+            border: solid 2px #474544;
+            color: #474544;
+            cursor: pointer;
+            display: inline-block;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-size: 0.875em;
+            font-weight: bold;
+            outline: none;
+            padding: 20px 35px;
+            text-transform: uppercase;
+            -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                -ms-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+
+            #form_button:hover {
+            background: #474544;
+            color: #F2F3EB;
+            }
+
+            @media screen and (max-width: 768px) {
+            #container {
+                margin: 20px auto;
+                width: 95%;
+            }
+            }
+
+            @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 26px;
+            }
+            
+            .underline {
+                width: 68px;
+            }
+            
+            #form_button {
+                padding: 15px 25px;
+            }
+            }
+
+            @media screen and (max-width: 420px) {
+            h1 {
+                font-size: 18px;
+            }
+            
+            .icon {
+                height: 35px;
+                width: 35px;
+            }
+            
+            .underline {
+                width: 53px;
+            }
+            
+            input[type='text'], [type='email'], select, textarea {
+                font-size: 0.875em;
+            }
+            } */
+    </style>
 
 </head>
 <body>
+    <div class="overlay"></div>
     <header>
         <!-- Menu -->
         <nav class="container">
@@ -25,7 +253,7 @@
             <div class="links">
                 <ul>
                     <li>
-                        <a href="#" class="nav-link">Inicio</a>
+                        <a href="#home" class="nav-link">Inicio</a>
                     </li>
                     <li>
                         <!-- <a href="#" class="nav-link">Acerca de mí</a> -->
@@ -37,13 +265,17 @@
                         <a href="#portafolio" class="nav-link">Portafolio</a>
                     </li>
                     <li>
-                        <a href="#contacto" class="nav-link">Contacto</a>
+                        <a href="mailto:ing.david.mv@gmail.com" class="nav-link">Contactar</a>
                     </li>
                     <li>
-                        <a href="diseño.html" class="nav-link">Diseño</a>
+                        <!-- <a href="diseño.html" class="nav-link">Diseño</a> -->
                     </li>
                 </ul>
-                <i class="uil uil-moon toggle-btn"></i>
+                <!-- <i class="uil uil-moon toggle-btn"></i> -->
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
         </nav>
     </header>
@@ -51,7 +283,7 @@
     <main>
         <!-- Home -->
         
-        <section class="showcase-area">
+        <section class="showcase-area" id="home">
             <div class="container">
                 <div class="showcase-info">
                     <h3 class="sub-heading">Desarrollador Web</h3>
@@ -60,8 +292,8 @@
                         Soy desarrollador web titulado en Universidad del Valle de Toluca. <br />
                     </p>
                     <div class="cta">
-                        <a href="mailto:ing.david.mv@gmail.com" class="btn">Trabajemos juntos :)</a>
-                        <a href="/assets/Desarrollador_web_Jr-Luis_David_Martinez.pdf" _blankTarget class="btn secondary-btn" >Descargar CV.</a>
+                        <a href="mailto:ing.david.mv@gmail.com" class="btn">Enviame un correo :)</a>
+                        <a href="assets/Desarrollador-Martinez-Valdes-Luis-David.pdf" target="_blank" class="btn secondary-btn" >Ver CV.</a>
                                     <!-- Descargar PDF -->
                         <!-- <a href="/assets/Desarrollador_web_Jr-Luis_David_Martinez.pdf" download class="btn secondary-btn">Descargar CV.</a> -->
                     </div>
@@ -71,8 +303,9 @@
                 </div>
             </div>
         </section>
-
-        <hr>
+        <!-- <br>
+            <hr>
+        <br> -->
         <!-- About -->
 
         <section class="about">
@@ -85,6 +318,7 @@
                 <center>
                     <h2 >{{ Proyectos }}</h2>
                 </center>
+                <!-- Propuesta CEAPE -->
                 <div class="grid-container">
                     <article id="3685" class="location-listing">
                       <a class="location-title" href="muestraFoem.html">Pagina CEAPE</a>
@@ -93,47 +327,39 @@
                             <img width="150" height="169" src="assets/FOEM/Index.png" alt="Foem">    </a>
                       </div>
                     </article>
-                
+                <!-- Pagos React -->
                     <article id="3688" class="location-listing">
-                
                       <a class="location-title" href="muestraPagos.html">
                           Pagos react            </a>
-                
                       <div class="location-image">
                         <a href="#">
                             <img width="300" height="169" src="assets/React-pagos-stripe/index.png" alt="Pagos">  </a>
-                
                       </div>
-                
                     </article>
-                
+                <!-- Restaurante -->
                     <article id="3691" class="location-listing">
-                
-                      <a class="location-title" href="Proyectos Paginas/Restaurante/index.html">
+                      <a class="location-title" href="Restaurante1.html">
                           Restaurante            </a>
-                
                       <div class="location-image">
                         <a href="#">
                             <img width="300" height="169" src="assets/Restaurante.png" alt="Res">  </a>
-                
-                      </div>
-                
+                        </div>
                     </article>
                 
-                    <!-- <article id="3694" class="location-listing">
+                    <article id="3694" class="location-listing">
                 
-                      <a class="location-title" href="#">
-                          Cholula           </a>
+                      <a class="location-title" href="horusCS.html">
+                          Club Social Horus           </a>
                 
                       <div class="location-image">
                         <a href="#">
-                            <img width="300" height="169" src="assets/img/Postal_4Cholula.jpg" alt="cape town">  </a>
+                            <img width="300" height="169" src="assets/Horus-bar/Horus_CS - index.png" alt="cape town">  </a>
                 
                       </div>
                 
                     </article>
                 
-                    <article id="3697" class="location-listing">
+                    <!-- <article id="3697" class="location-listing">
                 
                       <a class="location-title" href="#">
                           Morelos           </a>
@@ -166,7 +392,7 @@
             </div>
         </section>
 
-        <hr>
+        <!-- <hr> -->
         <!-- Skills -->
         <!-- <section class="skills section">
             <div class="container">
@@ -246,31 +472,58 @@
         <!-- <hr> -->
         <!-- About -->
 
-        <hr>
+        <br>
+            <hr>
+        <br>
         <!-- Habilidades -->
 
         <section class="about">
             <div class="container"><div class="about-grid">
                 
             </div>
-            <div class="about-info">
+            <div class="about-info" >
                 <h3 class="sub-heading">Habilidades</h3>
-                <h2 class="heading">Habilidades: <span class="apasionadoEn" ></span></h2>
+                <h2 class="heading"style="text-align: center ; ">Habilidades: <br><span class="apasionadoEn" ></span></h2>
                 <p class="text"> 
-                    Soy desarrollador web titulado en Universidad del Valle de Toluca. <br />
+                    <!-- Soy desarrollador web titulado en Universidad del Valle de Toluca. <br /> -->
                 </p>
-                <div class="cta">
-                    <a href="mailto:ing.david.mv@gmail.com" class="btn">Contactame :)</a>
-                    <a href="/assets/Desarrollador_web_Jr-Luis_David_Martinez.pdf" _blankTarget class="btn secondary-btn" >Descargar CV.</a>
-                                <!-- Descargar PDF -->
-                    <!-- <a href="/assets/Desarrollador_web_Jr-Luis_David_Martinez.pdf" download class="btn secondary-btn">Descargar CV.</a> -->
-                </div>
+
             </div>
         </section>
 
-        <hr>
+        <br>
+            <!-- <hr>    -->
+        <br>
+        
         <!-- About -->
     </main>
+    <footer class="pie-pagina">
+        <div class="group-1">
+            <div class="box">
+                <figure>
+                    <a href="">
+                        <img src="assets/img/Luna Rosa.jpg" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>Sobre mi</h2>
+                <p>Hola soy Luis David. Desarrollador y diseñador web. <br> Me gusta el diseño y la programacion. </p>
+            </div>
+            <div class="box">
+                <h2 id="contacto">Contacto</h2>
+                <div class="red-social">
+                    <a href="https://github.com/IngDeiv/" class="uil uil-github "><br>Github</a>
+                    <a href="https://www.linkedin.com/in/luis-david-martinez-a92554212/" class="uil uil-linkedin "><br>Linkedin</a>
+                    <a href="mailto:ing.david.mv@gmail.com" class="uil uil-message"><br>Mensaje</a>                       
+                </div>
+            </div>
+        </div>
+        <div class="group-2">
+            <small>&copy; 2022 <b>L.D.M.V</b> - Todos los derechos reservados</small>
+        </div>
+    </footer>
+    
 </body>
 
 <!-- Javascript -->
