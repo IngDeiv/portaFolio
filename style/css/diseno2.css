@@ -315,8 +315,8 @@ h1 {
   /* section.muestraProyecto img{
   } */
   .container-img .img-container {
-    width: 350px; /* largo de imagen */
-    height: 150px;
+    width: 330px; /* largo de imagen */
+    height: 140px;
     margin-bottom: 20px;
   }
   .container-img .thumbnail-container {
@@ -325,6 +325,9 @@ h1 {
     /* height:calc(100vh - 120px); */
     max-height: 600px;
     align-items: center;
+  }
+  .main-img:hover {
+    transform: scale(105%);
   }
 }
 
