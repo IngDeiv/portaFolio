@@ -8,8 +8,8 @@ font-family: 'Source Sans Pro', sans-serif; */
 /* ---------------- Web theme ---------------- */
 
 :root{
-    --hue-1: 257;
-    --hue-2: 47;
+    --hue-1: 237;
+    --hue-2: 147;
     --bg-color: hsl(var(--hue-1), 100%, 97%);
     --main-color-1: hsl(var(--hue-1), 100%, 60%);
     --main-color-dark-1: hsl(var(--hue-1), 69%, 50%);
@@ -523,6 +523,8 @@ header.scroller.logo {
 }
 
 @media screen and (max-width: 800px){
+    /* section.muestraProyecto img{
+    } */
     .pie-pagina .group-1 {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
@@ -604,7 +606,8 @@ body.open .hamburger .bar:last-child{
         flex-basis: 100%;
         flex-direction: column;
         align-items: center;
-        justify-content: center;padding: .5rem 0 2rem;
+        justify-content: center;
+        padding: .5rem 0 2rem;
         padding: 0.5rem 0 2rem;
         opacity: 0;
         transition: 0.3s;

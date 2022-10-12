@@ -311,6 +311,22 @@ h1 {
   box-shadow: 0 5px 5px rgba(0, 42, 90, 0.4);
 }
 
+@media screen and (max-width: 800px){
+  /* section.muestraProyecto img{
+  } */
+  .container-img .img-container {
+    width: 350px; /* largo de imagen */
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .container-img .thumbnail-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* height:calc(100vh - 120px); */
+    max-height: 600px;
+    align-items: center;
+  }
+}
 
 /* Galeria 4 */
 .container-g4{
